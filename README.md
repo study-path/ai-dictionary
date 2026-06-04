@@ -2,9 +2,7 @@
 
 A modern vocabulary learning tool built with React + Vite + TailwindCSS. Search any word and instantly get definitions, pronunciation, example sentences, and real photos — all in one clean interface.
 
-## 🔗 Live Demo
-
-[View Live Application](https://ai-dictionary-portfolioproject.vercel.app/)
+🔗 **Live Demo:** [ai-dictionary-portfolioproject.vercel.app](https://ai-dictionary-portfolioproject.vercel.app/)
 
 ![WordWise Screenshot](image-1.png)
 
