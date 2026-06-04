@@ -1,16 +1,70 @@
-# React + Vite
+# WordWise — Online Dictionary
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern vocabulary learning tool built with React + Vite + TailwindCSS. Search any word and instantly get definitions, pronunciation, example sentences, and real photos — all in one clean interface.
 
-Currently, two official plugins are available:
+## 🔗 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+[View Live Application] (https://ai-dictionary-portfolioproject.vercel.app/)
 
-## React Compiler
+![WordWise Screenshot]![alt text](image-1.png)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the ESLint configuration
+- **Definitions** — grouped by part of speech (noun, verb, adjective…) with numbered meanings
+- **Audio Pronunciation** — US English playback via the Free Dictionary API
+- **Example Sentences** — real examples from the dictionary, with smart fallback generation when none exist
+- **Synonyms** — listed alongside examples
+- **Photo Search** — 4 real photos per word powered by the Pexels API
+- **Light / Dark mode** — toggle with a single click, respects system preference on first load
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack
+
+| Layer           | Technology                                                          |
+| --------------- | ------------------------------------------------------------------- |
+| Framework       | React 19 + Vite 8                                                   |
+| Styling         | TailwindCSS                                                         |
+| Dictionary data | [Free Dictionary API](https://dictionaryapi.dev/) — no key required |
+| Photos          | [Pexels API](https://www.pexels.com/api/) — free key required       |
+
+## Skills Demonstrated
+
+- React Hooks (useState, useEffect)
+- API integration and asynchronous data fetching
+- Environment variables management
+- Responsive UI development
+- Component-based architecture
+- Error handling and loading states
+- Dark mode implementation
+
+## Getting Started
+
+### 1. Clone the repo
+
+```bash
+git clone https://github.com/study-path/ai-dictionary.git
+cd ai-dictionary
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Add your Pexels API key
+
+Create a `.env` file in the project root:
+
+```
+VITE_PEXELS_API_KEY=your_pexels_key_here
+```
+
+Get a free key at [pexels.com/api](https://www.pexels.com/api/) — instant, no credit card needed.
+
+### 4. Run the dev server
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173) in your browser.
