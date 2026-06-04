@@ -4,9 +4,9 @@ A modern vocabulary learning tool built with React + Vite + TailwindCSS. Search 
 
 ## 🔗 Live Demo
 
-[View Live Application] (https://ai-dictionary-portfolioproject.vercel.app/)
+[View Live Application](https://ai-dictionary-portfolioproject.vercel.app/)
 
-![WordWise Screenshot]![alt text](image-1.png)
+![WordWise Screenshot](image-1.png)
 
 ## Features
 
