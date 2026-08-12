@@ -6,7 +6,11 @@ export default defineConfig({
   plugins: [react(), tailwindcss()],
   server: {
     proxy: {
-      '/api': 'http://localhost:3001',
+      '/api/dictionary': {
+        target: 'https://api.dictionaryapi.dev',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api\/dictionary\?word=(.+)/, '/api/v2/entries/en/$1'),
+      },
     },
   },
 })

@@ -3,13 +3,17 @@ import { useState } from 'react';
 export default function PronunciationButton({ audioUrl }) {
   const [playing, setPlaying] = useState(false);
 
-  function play() {
+  async function play() {
     if (!audioUrl || playing) return;
     const audio = new Audio(audioUrl);
-    setPlaying(true);
-    audio.play();
     audio.onended = () => setPlaying(false);
     audio.onerror = () => setPlaying(false);
+    try {
+      setPlaying(true);
+      await audio.play();
+    } catch {
+      setPlaying(false);
+    }
   }
 
   if (!audioUrl) return null;

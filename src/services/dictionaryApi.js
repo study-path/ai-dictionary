@@ -1,7 +1,5 @@
-const BASE = 'https://api.dictionaryapi.dev/api/v2/entries/en';
-
 export async function fetchWord(word) {
-  const res = await fetch(`${BASE}/${encodeURIComponent(word.trim())}`);
+  const res = await fetch(`/api/dictionary?word=${encodeURIComponent(word.trim())}`);
   if (res.status === 404) throw new Error('Word not found');
   if (!res.ok) throw new Error('Dictionary API error');
   return res.json();

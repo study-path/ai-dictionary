@@ -96,7 +96,7 @@ export default function PexelsSection({ word }) {
               </div>
             )}
             <img
-              src={photo.src.large}
+              src={photo.src.medium}
               alt={photo.alt || word}
               onLoad={() => setLoaded((p) => ({ ...p, [i]: true }))}
               className={`w-full h-full object-cover transition-opacity duration-500 ${loaded[i] ? 'opacity-100' : 'opacity-0'}`}
